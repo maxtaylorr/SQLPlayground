@@ -5,7 +5,7 @@
   - Max Taylor
   - Kolbe Weathington
   - Lee Offir
-  - P.J. Daniel
+  - Patrick Daniel
 
 This project is a playground for people who are new to SQL and want to mess around with commands without messing up their data. Static data is given to the user which means there is no way the user can delete or destroy our actual data with their test commands. This way a programmer can come practice SQL stress free. With this playground, users have freedom to use any SQL command they want in order to provide the most immersive experience.
 
