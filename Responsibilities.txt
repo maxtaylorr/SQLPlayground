@@ -1,0 +1,11 @@
+Max - Model
+Patrick - Controller
+Kolbe - Model
+Sam - View
+Lee - Database
+
+Database 
+
+Customer -> CustomerID
+Product ( Games ) -> ProductID
+Order -> CustomerID and ProductID
