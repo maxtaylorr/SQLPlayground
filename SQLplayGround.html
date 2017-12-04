@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+name: Sam Burnett
+pawprint: smbcp6
+date: 
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>***Ch4ll3ng3***</title>
+    <style>
+        h1{
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            font-family: fantasy;
+            font-size: 4em;
+            border-radius: 10px;
+            border: 5px solid black;
+            background: linear-gradient(150deg,darkblue,#76f5fc);
+        }
+        #t1{
+            display: block;
+            border: 5px solid black;
+            border-radius: 10px;
+            height: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            overflow: hidden;
+            text-align: left;
+        }
+        #sql{
+            border: 5px solid black;
+            border-radius: 10px;
+            height: 250px; 
+            margin-top: 20px;
+            background: white;
+            margin: 10px auto;
+            width: 70%;
+            padding: 10px;
+            text-align: center;
+        }
+        #myVideo {
+            position: fixed;
+            z-index: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            flex: 100%;
+
+        }
+        #kingDiv{
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        button{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: fantasy;
+            align-content: center;
+            margin: 10px;
+            cursor: pointer;
+            width: 80px;
+            background: #76f5fc;
+            
+            
+            
+        }
+        #bDiv{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>MySQL PlayGround Boi</h1>
+    <div>
+        <video autoplay muted loop id="myVideo">
+            <source src="Particle_Wave_4K_Motion_Background_Loop.mp4" type="video/mp4">
+        </video>  
+        <div id="kingDiv">
+
+            <div>
+                <textarea id="t1" placeholder="SQL goes here..."></textarea>
+            </div>
+            <div id="bDiv">
+                <button>CREATE</button>
+                <button>READ</button>
+                <button>UPDATE</button>
+                <button>DELETE</button>
+            </div>
+            <div id="sql">
+
+                <p>THIS DIV IS FOR THE DATABASE</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
