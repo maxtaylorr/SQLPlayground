@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<!--
-name: Sam Burnett
-pawprint: smbcp6
-date:
--->
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>***Ch4ll3ng3***</title>
-    <style>
+
         h1{
             position: relative;
             z-index: 2;
@@ -73,6 +63,9 @@ date:
         #bDiv{
             display: flex;
             justify-content: center;
+<<<<<<< HEAD:index.css
+        }
+=======
         }
 
     </style>
@@ -104,3 +97,4 @@ date:
     </div>
 </body>
 </html>
+>>>>>>> master:SQLplayGround.html
