@@ -1,3 +1,4 @@
+
         h1{
             position: relative;
             z-index: 2;
@@ -22,7 +23,7 @@
         #sql{
             border: 5px solid black;
             border-radius: 10px;
-            height: 250px; 
+            height: 250px;
             margin-top: 20px;
             background: white;
             margin: 10px auto;
@@ -55,11 +56,45 @@
             cursor: pointer;
             width: auto;
             background: #76f5fc;
-            
-            
-            
+
+
+
         }
         #bDiv{
             display: flex;
             justify-content: center;
+<<<<<<< HEAD:index.css
         }
+=======
+        }
+
+    </style>
+</head>
+<body>
+    <h1>MySQL PlayGround Boi</h1>
+    <div>
+        <video autoplay muted loop id="myVideo">
+            <source src="Particle_Wave_4K_Motion_Background_Loop.mp4" type="video/mp4">
+        </video>
+        <div id="kingDiv">
+            <div>
+                <textarea id="t1" placeholder="SQL goes here..."></textarea>
+            </div>
+            <div id="bDiv">
+                <button>RUN BOi</button>
+<!--
+                <button>READ</button>
+                <button>UPDATE</button>
+                <button>DELETE</button>
+-->
+            </div>
+            <div id="sql">
+
+                <p>THIS DIV IS FOR THE DATABASE</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+>>>>>>> master:SQLplayGround.html

@@ -9,3 +9,6 @@ Database
 Customer -> CustomerID
 Product ( Games ) -> ProductID
 Order -> CustomerID and ProductID
+
+Sample Site
+https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all
