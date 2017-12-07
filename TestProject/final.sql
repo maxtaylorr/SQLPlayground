@@ -1,6 +1,3 @@
-DROP SCHEMA IF EXISTS epiz_20676241_world;
-CREATE SCHEMA epiz_20676241_world;
-USE epiz_20676241_world;
 SET AUTOCOMMIT=0;
 
 
@@ -36,7 +33,7 @@ CREATE TABLE `product` (
   `Cost` FLOAT(4,2) NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`ProductID`)
   KEY `OrderID` (`OrderID`),
-  CONSTRAINT `city_ibfk_1` FOREIGN KEY (`OrderID`) REFERENCES `customer` (`Code`)
+  FOREIGN KEY (`OrderID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=latin1;
 
 INSERT INTO `product` VALUES (1,'Counter Strike: Global Offenseive','Valve','Valve',2012, 14.99);
@@ -54,9 +51,8 @@ INSERT INTO `product` VALUES (12, 'Left 4 Dead 2','Valve','Valve',2009, 19.99);
 INSERT INTO `product` VALUES (13, 'Miscreated','Entrada Interactive','Entrada Interactive',2014, 19.99);
 INSERT INTO `product` VALUES (14, 'Mass Effect 2','Bioware','EA',2010, 19.99);
 INSERT INTO `product` VALUES (15, 'Goat Simulator','Coffee Stain Studios','Coffee Stain Studios',2014, 9.99);
-INSERT INTO `product` VALUES (16,'Portal 2','Valve','Valve',2011, 19.99);
-INSERT INTO `product` VALUES (17, 'Watch Dogs','Ubisoft','Ubisoft',2014, 29.99);
-INSERT INTO `product` VALUES (18, 'Dota','Valve','Valve',2013, 0.00);
+INSERT INTO `product` VALUES (16, 'Watch Dogs','Ubisoft','Ubisoft',2014, 29.99);
+INSERT INTO `product` VALUES (17, 'Dota','Valve','Valve',2013, 0.00);
 
 
 DROP TABLE IF EXISTS `order`;
@@ -67,39 +63,39 @@ CREATE TABLE `Order` (
   `Cost` FLOAT(4,2) NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`OrderID`),
   KEY `OrderID` (`OrderID`),
-  CONSTRAINT `_ibfk_1` FOREIGN KEY (`CustomerID`, `ProductID`) REFERENCES `country` (`Code`)
+  CONSTRAINT `_ibfk_1` FOREIGN KEY (`CustomerID`, `ProductID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
-INSERT INTO `order` VALUES (1,2,12,59.99);
-INSERT INTO `order` VALUES (2,4,11,19.99);
+INSERT INTO `order` VALUES (1,2,12,9.99);
+INSERT INTO `order` VALUES (2,4,11,9.99);
 INSERT INTO `order` VALUES (3,3,10,0.00);
-INSERT INTO `order` VALUES (4,4,9,9.99);
+INSERT INTO `order` VALUES (4,4,9,59.99);
 INSERT INTO `order` VALUES (5,5,8,9.99);
 INSERT INTO `order` VALUES (6,6,7,29.99);
-INSERT INTO `order` VALUES (7,1,6,29.99);
-INSERT INTO `order` VALUES (8,1,8,29.99);
-INSERT INTO `order` VALUES (9,2,8,29.99);
-INSERT INTO `order` VALUES (10,3,8,29.99);
-INSERT INTO `order` VALUES (11,5,8,29.99);
-INSERT INTO `order` VALUES (12,6,8,29.99);
-INSERT INTO `order` VALUES (13,1,8,29.99);
-INSERT INTO `order` VALUES (14,2,8,29.99);
-INSERT INTO `order` VALUES (15,4,8,29.99);
-INSERT INTO `order` VALUES (16,5,8,29.99);
-INSERT INTO `order` VALUES (17,6,8,29.99);
-INSERT INTO `order` VALUES (18,4,8,29.99);
-INSERT INTO `order` VALUES (19,2,8,29.99);
-INSERT INTO `order` VALUES (20,3,8,29.99);
-INSERT INTO `order` VALUES (21,1,8,29.99);
-INSERT INTO `order` VALUES (22,6,8,29.99);
-INSERT INTO `order` VALUES (23,2,8,29.99);
-INSERT INTO `order` VALUES (24,4,8,29.99);
-INSERT INTO `order` VALUES (25,2,8,29.99);
-INSERT INTO `order` VALUES (26,3,8,29.99);
-INSERT INTO `order` VALUES (27,5,8,29.99);
-INSERT INTO `order` VALUES (28,6,8,29.99);
-INSERT INTO `order` VALUES (29,2,8,29.99);
-INSERT INTO `order` VALUES (30,5,8,29.99);
+INSERT INTO `order` VALUES (7,1,6,59.99);
+INSERT INTO `order` VALUES (8,1,5,19.99);
+INSERT INTO `order` VALUES (9,2,4,29.99);
+INSERT INTO `order` VALUES (10,3,3,59.99);
+INSERT INTO `order` VALUES (11,5,2,19.99);
+INSERT INTO `order` VALUES (12,6,1,14.99);
+INSERT INTO `order` VALUES (13,1,1,14.99);
+INSERT INTO `order` VALUES (14,2,2,19.99);
+INSERT INTO `order` VALUES (15,4,3,59.99);
+INSERT INTO `order` VALUES (16,5,4,29.99);
+INSERT INTO `order` VALUES (17,6,5,19.99);
+INSERT INTO `order` VALUES (18,4,6,59.99);
+INSERT INTO `order` VALUES (19,2,7,29.99);
+INSERT INTO `order` VALUES (20,3,8,9.99);
+INSERT INTO `order` VALUES (21,1,9,59.99);
+INSERT INTO `order` VALUES (22,6,10,0.00);
+INSERT INTO `order` VALUES (23,2,11,9.99);
+INSERT INTO `order` VALUES (24,4,12,9.99);
+INSERT INTO `order` VALUES (25,2,13,19.99);
+INSERT INTO `order` VALUES (26,3,14,19.99);
+INSERT INTO `order` VALUES (27,5,15,9.99);
+INSERT INTO `order` VALUES (28,6,16,29.99);
+INSERT INTO `order` VALUES (29,2,17,0.00);
+INSERT INTO `order` VALUES (30,5,13,19.99);
 
 SET AUTOCOMMIT=1;
