@@ -29,7 +29,7 @@ CREATE TABLE `product` (
   `GameName` CHAR(52) NOT NULL DEFAULT '',
   `Developer` CHAR(26) NOT NULL DEFAULT '',
   `Publisher` CHAR(26) NOT NULL DEFAULT '',
-  `Realease Year` INT(4) NOT NULL DEFAULT '0000',
+  `ReleaseYear` INT(4) NOT NULL DEFAULT '0000',
   `Cost` FLOAT(4,2) NOT NULL DEFAULT '0.00',
   PRIMARY KEY (`ProductID`)
   KEY `OrderID` (`OrderID`),
