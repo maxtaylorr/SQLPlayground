@@ -36,7 +36,7 @@ CREATE TABLE `product` (
   FOREIGN KEY (`OrderID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=latin1;
 
-INSERT INTO `product` VALUES (1,'Counter Strike: Global Offenseive','Valve','Valve',2012, 14.99);
+INSERT INTO `product` VALUES (1,'Counter Strike: Global Offensive','Valve','Valve',2012, 14.99);
 INSERT INTO `product` VALUES (2,'Rocket League','Psyonix','Psyonix',2015, 19.99);
 INSERT INTO `product` VALUES (3,'Assassins Creed: Origins','Ubisoft Montreal','Ubisoft',2017, 59.99);
 INSERT INTO `product` VALUES (4,'Grand Theft Auto: V','Rockstar North','Rockstar Games',2015, 29.99);
