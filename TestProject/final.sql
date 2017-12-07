@@ -56,7 +56,7 @@ INSERT INTO `product` VALUES (17, 'Dota','Valve','Valve',2013, 0.00);
 
 
 DROP TABLE IF EXISTS `order`;
-CREATE TABLE `Order` (
+CREATE TABLE `order` (
   `OrderID` INT(10) NOT NULL AUTO_INCREMENT '',
   `CustomerID` CHAR(30) NOT NULL DEFAULT '',
   `ProductID` CHAR(10) NOT NULL DEFAULT '',
