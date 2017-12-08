@@ -1,19 +1,20 @@
 var liveDB;
 
 function dbInit() {
+  var liveDB = window.openDatabase('gameDB',"1.0","Database of games", "2 * 1024 * 1024";
   var dbObj = this;
 
    this.initCustomer = function() {
        liveDB.transaction(function (tx)
            {
-               tx.executeSql('CREATE TABLE customer (CustomerID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,FirstName NVARCHAR(45),LastName NVARCHAR(45))',[], function(tx)
+               tx.executeSql('CREATE TABLE Customer (CustomerID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,FirstName NVARCHAR(45),LastName NVARCHAR(45))',[], function(tx)
                    {
-                       tx.executeSql('INSERT INTO `customer` (FirstName,LastName) VALUES ("John","Smith")');
-                       tx.executeSql('INSERT INTO `customer` (FirstName,LastName) VALUES ("Patrick","Waganar")');
-                       tx.executeSql('INSERT INTO `customer` (FirstName,LastName) VALUES ("Samuel","Slayer")');
-                       tx.executeSql('INSERT INTO `customer` (FirstName,LastName) VALUES ("Debra","Ulysses")');
-                       tx.executeSql('INSERT INTO `customer` (FirstName,LastName) VALUES ("Steve","Madden")');
-                       tx.executeSql('INSERT INTO `customer` (FirstName,LastName) VALUES ("Allison","Joy")');
+                       tx.executeSql('INSERT INTO Customer (FirstName,LastName) VALUES ("John","Smith")');
+                       tx.executeSql('INSERT INTO Customer (FirstName,LastName) VALUES ("Patrick","Waganar")');
+                       tx.executeSql('INSERT INTO Customer (FirstName,LastName) VALUES ("Samuel","Slayer")');
+                       tx.executeSql('INSERT INTO Customer (FirstName,LastName) VALUES ("Debra","Ulysses")');
+                       tx.executeSql('INSERT INTO Customer (FirstName,LastName) VALUES ("Steve","Madden")');
+                       tx.executeSql('INSERT INTO Customer (FirstName,LastName) VALUES ("Allison","Joy")');
                    }
                );
            }
@@ -104,6 +105,4 @@ function dbInit() {
            }
        );
    };
-
-
 }
