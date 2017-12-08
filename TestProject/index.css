@@ -1,0 +1,58 @@
+#kingDiv{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+body{
+    background: radial-gradient(darkblue,#76f5fc)
+}
+h1{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 4em;
+    border-radius: 10px;
+    border: 5px solid black;
+    background: linear-gradient(150deg,darkblue,#76f5fc);
+}
+#t1{
+    padding: 15px;
+    display: block;
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    overflow: hidden;
+    text-align: left;
+}
+#sql{
+    border: 5px solid black;
+    border-radius: 10px;
+    height: 250px; 
+    margin-top: 20px;
+    background: white;
+    margin: 10px auto;
+    width: 70%;
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: fantasy;
+    font-size: 1.5em;
+    align-content: center;
+    margin: 10px;
+    cursor: pointer;
+    width: auto;
+    background: #76f5fc;    
+}
+#buttonDiv{
+    display: flex;
+    justify-content: center;
+}

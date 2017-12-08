@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+name: Sam Burnett
+pawprint: smbcp6
+date: 
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>***Ch4ll3ng3***</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="InitDatabase.js" >
+        function runClick(){
+            
+        }
+        function loadClick(){
+            
+        }
+    </script>
+    <script>
+        function functionLaunch(){
+            var y = document.getElementById("t1").value;
+            document.getElementById("sql").innerHTML = y;
+        }
+    </script>
+
+</head>
+<body>
+    <h1>MySQL PlayGround Boi</h1>
+    <div>
+        <div id="kingDiv">
+
+            <div>
+                <textarea id="t1" placeholder="SQL goes here..."></textarea>
+            </div>
+            
+            <div id="buttonDiv">
+                <button onclick="runClick()">Run</button>
+                <button onclick="loadClick()">Load</button>
+                <button onclick="functionLaunch()">Update SQL</button>
+<!--
+yo if you need more buttons here they be
+                
+                <button>DELETE</button>
+-->
+            </div>
+            <div id="sql">
+
+                <p>THIS DIV IS FOR THE DATABASE</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
