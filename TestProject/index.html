@@ -8,34 +8,14 @@ date:
 <head>
     <meta charset="UTF-8">
     <title> SQL Playground </title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="model.js"></script>
     <script>
-    <?php
-
-        public function getError() {
-			return $this->error;
-		}
-
-        private function initDatabaseConnection() {
-          require("model.js");
-          var db = runIt();
-          db.initCustomers();
-          db.executeSql();
-		}
-
-        // $sql = "SELECT id, firstname, lastname FROM MyGuests";
-        // $result = $conn->query($sql);
-        //
-        // if ($result->num_rows > 0) {
-        //     // output data of each row
-        //     while($row = $result->fetch_assoc()) {
-        //         echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-        //     }
-        // } else {
-        //     echo "0 results";
-        // }
-        // $conn->close();
-    ?>
+      function start(){
+          console.log("did it");
+          var db = getSession();
+          db.createDB();
+        }
     </script>
 
 </head>
@@ -51,7 +31,7 @@ date:
                 <textarea id="t1" placeholder="SQL goes here..."></textarea>
             </div>
             <div id="bDiv">
-                <button onclick="initDatabaseConnection();">RUN BOi</button>
+                <button onclick="start();">RUN BOi</button>
 <!--
                 <button>READ</button>
                 <button>UPDATE</button>
