@@ -1,10 +1,12 @@
-var dbase;
+var databaseObject;
 
 function function runIt(){
-  dbase = window.openDatabase('gameDB',"1.0","Database of games", "2 * 1024 * 1024");
-  var session = this;
+  var dbase = window.openDatabase('gameDB',"1.0","Database of games", "2 * 1024 * 1024");
+  databaseObject = this;
 
-  session.initCustomers;
+  (function initCostumers(){
+      this.initCustomers();
+  })();
 
   this.initCustomers = function init(){
     dbase.transaction(function(tx) {
@@ -23,9 +25,5 @@ function function runIt(){
       alert(results.rows.item(i).text);
     }
   });
-
-  //
-  // console.console.log();
   }
-
 }
