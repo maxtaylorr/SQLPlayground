@@ -11,7 +11,7 @@
       ?>
         <table border="1">
             <tr>
-                <td align="center">Form Input Employees Data</td>
+                <td align="center"></td>
             </tr>
             <tr>
                 <td>

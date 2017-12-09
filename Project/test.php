@@ -2,12 +2,12 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Title of the document</title>
+        <title>Games! Games! Games!</title>
     </head>
 
     <body>
         <?php
-                require('crendentials.php');
+        require('crendentials.php');
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,7 +17,6 @@
             echo "<h1>test</h1>";
             die("Connection failed: " . $conn->connect_error);
         } else {
-
             echo "Connected successfully";
         }
         echo "<h1>begin test</h1>";
