@@ -34,6 +34,7 @@ This project is a tool for game store managers, for example GameStop, to utilize
 | 15             | Goat Simulator | Coffe Stain Studios | Coffee Stained Studios     | 2014 | 9.99    |
 | 16             | Watch Dogs     | Ubisoft        | Ubisoft        | 2014           | 29.99          |
 | 17             | Dota           | Valve          | Valve          | 2009           | 0.00           |
+| 18             | Fubaky Fabtasy XIII | Square Enix | Square Enix  | 2009           | 19.99          |
 
 ---
 
