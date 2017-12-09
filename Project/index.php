@@ -5,9 +5,14 @@
         <title>Title of the document</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    
+
     <body>
-        <table border="1">
+      <?php
+              require('crendentials.php');
+      ?>
+        <h1>CS3330 Final Project</h1>
+        <div>
+        <table align="center" border="1">
             <tr>
                 <td align="center">Form Input Employees Data</td>
             </tr>
@@ -43,6 +48,8 @@
                 </td>
             </tr>
         </table>
+        </div>
+        <div align="center">
         <?php
         $servername = "sql3.freesqldatabase.com";
         $username = "sql3209420";
@@ -102,6 +109,7 @@
         }
         $conn->close();
         ?>
+            </div>
         <h1>title</h1>
     </body>
     
