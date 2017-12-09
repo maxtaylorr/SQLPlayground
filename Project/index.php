@@ -1,17 +1,15 @@
+
 <!DOCTYPE HTML>
 <html>
     <head>
         <title>Title of the document</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-
+    
     <body>
-      <?php
-              require('crendentials.php');
-      ?>
         <table border="1">
             <tr>
-                <td align="center"></td>
+                <td align="center">Form Input Employees Data</td>
             </tr>
             <tr>
                 <td>
@@ -46,25 +44,46 @@
             </tr>
         </table>
         <?php
+        $servername = "sql3.freesqldatabase.com";
+        $username = "sql3209420";
+        $password = "DPHvgZgvvd";
+        $dbname = "sql3209420";
+        
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
-
+        
         // Check connection
         if ($conn->connect_error) {
             echo "<h1>test</h1>";
             die("Connection failed: " . $conn->connect_error);
         } else {
+            
             echo "Connected successfully";
         }
-    /*    echo "<h1>begin test</h1>";
-        $sql = "SELECT * FROM Product limit 10";
+        echo "<h1>begin test</h1>";
+        $sql = "SELECT * FROM Product";
         $result = $conn->query($sql);
-
+        
         if ($result->num_rows > 0) {
             // output data of each row
+            echo "<table>";
+            echo    "<tr>
+                    <th>Game</th>
+                    <th>Developer</th> 
+                    <th>Publisher</th>
+                    <th>Release Year</th> 
+                    <th>Price</th>
+                    </tr>";
             while($row = $result->fetch_assoc()) {
-                echo "Product: " . $row["GameName"]. "<br>";
+                echo "<tr>";
+                echo "<td>" . $row["GameName"] . "</td>";
+                echo "<td>" . $row["Developer"] . "</td>";
+                echo "<td>" . $row["Publisher"] . "</td>";
+                echo "<td>" . $row["ReleaseYear"] . "</td>";
+                echo "<td>" . $row["Cost"] . "</td>";
+                echo "</tr>";
             }
+            echo "</table>";
         } else {
             echo "0 results";
         }
@@ -80,10 +99,10 @@
             echo "There are no tables<br />\n";
         } else {
             echo "There are $tblCnt tables<br />\n";
-        }*/
+        }
         $conn->close();
         ?>
         <h1>title</h1>
     </body>
-
+    
 </html>
