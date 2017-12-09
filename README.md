@@ -53,5 +53,7 @@ With this web application, you are able to easily create new data entries with t
 
 [![SQL Playground](https://img.youtube.com/vi/rurIGAFKlwY/0.jpg)](https://youtu.be/rurIGAFKlwY)
 
+There are a few bugs in the video but we were running out of time to upload and meet the deadline.
+
 # The Web Application
 http://patrickdaniel.tech/3380/final/
