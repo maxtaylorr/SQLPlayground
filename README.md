@@ -37,7 +37,7 @@ This project is a tool for game store managers, for example GameStop, to utilize
 ---
 
 # Entity Relationship Diagram
-![alt text](http://patrickdaniel.tech/3380/final/erd.png "ERD Diagram")
+![alt text](https://user-images.githubusercontent.com/15042102/33792584-babd4694-dc69-11e7-9bc5-a6153177b15b.png "ERD Diagram")
 
 ---
 
