@@ -5,6 +5,7 @@
   - Max Taylor
   - Kolbe Weathington
   - Patrick Daniel
+  - Lee Offir
 
 This project is a tool for game store managers, for example GameStop, to utilize to help keep the games they carry in a compact, easily readable manner. Once the user gets a new game they can easily add it to the database and see the entire list of the games. On top of that, the user can also drop any record from the database and have a consistent upkeep of the games in the store. 
 
