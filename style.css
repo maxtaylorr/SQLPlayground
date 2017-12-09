@@ -1,0 +1,46 @@
+*{
+    font-weight: bold;
+}
+table{
+    width: auto;
+	border: 5px solid grey;
+    background: linear-gradient(-150deg,blue,#76f5fc);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+th {
+    border: 2px solid black;
+    background: lightblue;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
+td{
+	border: 1px solid white;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+body{
+    background: radial-gradient(green,lightblue,white);
+}
+h1{
+    border: 5px solid grey;
+    background: linear-gradient(-150deg,darkblue,#76f5fc);
+    text-align: center;
+    font-family: monospace;
+    color: white;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
