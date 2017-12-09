@@ -6,7 +6,7 @@
   - Kolbe Weathington
   - Patrick Daniel
 
-This project is a tool for game store managers, for example GameStop, to utilize to help keep the games they carry in a compact, easily readable manner. Once the user gets a new game they can easily add
+This project is a tool for game store managers, for example GameStop, to utilize to help keep the games they carry in a compact, easily readable manner. Once the user gets a new game they can easily add it to the database and see the entire list of the games. On top of that, the user can also drop any record from the database and have a consistent upkeep of the games in the store. 
 
 ---
 
@@ -37,14 +37,13 @@ This project is a tool for game store managers, for example GameStop, to utilize
 ---
 
 # Entity Relationship Diagram
-![alt text](http://www.24gaam.com/education/computer/images/erdiagrm.gif "ERD Diagram")
+![alt text](http://patrickdaniel.tech/3380/final/erd.png "ERD Diagram")
 
 ---
 
 # CRUD Explanation
 
-In this project the user has the ability to create, read, update, and delete with his/her SQL commands depending on what commands are written. The user can create data by using an INSERT INTO command and insert new data into one of the tables. By choosing to do a simple SELECT * statement from any of the above tables, the user will be able to read specific records from the tables. The same can be said for update. The user can choose to update any record by using the UPDATE command in SQL and update any of the records he or she chooses to update. Last but not least, the user has the ability to delete any record
-~~or all of the records~~ with the DELETE command. By having the ability to create, read, update, and delete, the user can explore the wonderful world of SQL stress free.
+With this web application, you are able to easily create new data entries with the add button. Reading is easy to do as well since the data is the front page of the web application. All of the data is front and center for the user to read. 
 
 ---
 
