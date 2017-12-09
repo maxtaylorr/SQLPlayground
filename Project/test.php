@@ -7,10 +7,7 @@
 
     <body>
         <?php
-        $servername = "sql3.freesqldatabase.com";
-        $username = "sql3209420";
-        $password = "DPHvgZgvvd";
-        $dbname = "sql3209420";
+        require("ServerCredentials.php");
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);

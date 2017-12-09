@@ -4,7 +4,7 @@
     <head>
         <title>Title of the document</title>
     </head>
-    
+
     <body>
         <table border="1">
             <tr>
@@ -36,7 +36,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td align="right"><input type="submit" 
+                        <td align="right"><input type="submit"
                                                  name="submit" value="Sent"></td>
                     </tr>
                     </table>
@@ -44,26 +44,24 @@
             </tr>
         </table>
         <?php
-        $servername = "sql3.freesqldatabase.com";
-        $username = "sql3209420";
-        $password = "DPHvgZgvvd";
-        $dbname = "sql3209420";
-        
+        require("ServerCredentials.php");
+
+
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
-        
+
         // Check connection
         if ($conn->connect_error) {
             echo "<h1>test</h1>";
             die("Connection failed: " . $conn->connect_error);
         } else {
-            
+
             echo "Connected successfully";
         }
     /*    echo "<h1>begin test</h1>";
         $sql = "SELECT * FROM Product limit 10";
         $result = $conn->query($sql);
-        
+
         if ($result->num_rows > 0) {
             // output data of each row
             while($row = $result->fetch_assoc()) {
@@ -89,5 +87,5 @@
         ?>
         <h1>title</h1>
     </body>
-    
+
 </html>
