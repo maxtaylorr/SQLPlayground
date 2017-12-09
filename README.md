@@ -7,7 +7,7 @@
   - Patrick Daniel
   - Lee Offir
 
-This project is a tool for game store managers, for example GameStop, to utilize to help keep the games they carry in a compact, easily readable manner. Once the user gets a new game they can easily add it to the database and see the entire list of the games. On top of that, the user can also drop any record from the database and have a consistent upkeep of the games in the store. 
+This project is a tool for game store managers, for example GameStop, to utilize to help keep the games they carry in a compact, easily readable manner. Once the user gets a new game they can easily add it to the database and see the entire list of the games. On top of that, the user can also drop as well as update any record from the database and have a consistent upkeep of the games in the store. This web application is a general game manager that any user can pickup to help keep track of the games they have or are potentially ordering.
 
 ---
 
@@ -45,10 +45,13 @@ This project is a tool for game store managers, for example GameStop, to utilize
 
 # CRUD Explanation
 
-With this web application, you are able to easily create new data entries with the add button. Reading is easy to do as well since the data is the front page of the web application. All of the data is front and center for the user to read. 
+With this web application, you are able to easily create new data entries with the add button. Reading is easy to do as well since the data is the front page of the web application. All of the data is front and center for the user to read. When it comes to deleting, the user must type in the game name and then hit the button to either delete. The updating works by typing in the game name and then the data you wish to change and then hitting the button. 
 
 ---
 
 # Video Walk Through
 
-[![SQL Playground](https://azure.microsoft.com/svghandler/sql-database/?width=600&height=315)](http://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![SQL Playground](https://img.youtube.com/vi/rurIGAFKlwY/0.jpg)](https://youtu.be/rurIGAFKlwY)
+
+# The Web Application
+http://patrickdaniel.tech/3380/final/
