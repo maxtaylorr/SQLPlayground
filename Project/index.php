@@ -1,8 +1,8 @@
-
 <!DOCTYPE HTML>
 <html>
     <head>
         <title>Title of the document</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
@@ -39,8 +39,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td align="right"><input type="submit"
-                                                 name="submit" value="Sent"></td>
+                        <td align="right"><input type="submit" name="submit" value="Sent"></td>
                     </tr>
                     </table>
                 </td>

@@ -1,6 +1,5 @@
 <?php
 require('crendentials.php');
-
 mysql_connect($servername,$username,$password);
 
 mysql_select_db($dbname);
@@ -11,7 +10,6 @@ $year=$_POST['year'];
 
 $order = "INSERT INTO Product (GameNam, Developer, Publisher, ReleaseYear, Cost) VALUES
         ('$name'
-          
         '$dev',
         '$pub',
         '$year',
