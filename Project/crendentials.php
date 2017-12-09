@@ -4,6 +4,6 @@
     $password = "DPHvgZgvvd";
     $dbname = "sql3209420";
 
-    Databases (so far) are:
-    Customer, Product, Orders
+    // Databases (so far) are:
+    // Customer, Product, Orders
 ?>

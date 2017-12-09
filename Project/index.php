@@ -6,6 +6,9 @@
     </head>
 
     <body>
+      <?php
+              require('crendentials.php');
+      ?>
         <table border="1">
             <tr>
                 <td align="center">Form Input Employees Data</td>
@@ -44,9 +47,6 @@
             </tr>
         </table>
         <?php
-        require("ServerCredentials.php");
-
-
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -55,7 +55,6 @@
             echo "<h1>test</h1>";
             die("Connection failed: " . $conn->connect_error);
         } else {
-
             echo "Connected successfully";
         }
     /*    echo "<h1>begin test</h1>";

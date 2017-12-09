@@ -7,7 +7,7 @@
 
     <body>
         <?php
-        require("ServerCredentials.php");
+        require('ServerCrendentials.php');
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);

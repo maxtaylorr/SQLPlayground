@@ -1,5 +1,5 @@
 <?php
-require("ServerCrendentials.php");
+require('crendentials.php');
 
 
 mysql_connect($servername,$username,$password);
