@@ -19,3 +19,13 @@ td{
     text-align: center;
     border-radius: 10px;
 }
+body{
+    background: radial-gradient(#76f5fc,darkblue,#76f5fc);
+}
+h1{
+    border: 5px solid black;
+    background: linear-gradient(-150deg,darkblue,#76f5fc);
+    text-align: center;
+    font-family: monospace;
+    color: white;
+} 

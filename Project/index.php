@@ -4,12 +4,13 @@
         <title>Title of the document</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-
     <body>
       <?php
               require('crendentials.php');
       ?>
-        <table border="1">
+        <h1>CS3330 Final Project</h1>
+        <div>
+        <table align="center" border="1">
             <tr>
                 <td align="center"></td>
             </tr>
@@ -45,6 +46,8 @@
                 </td>
             </tr>
         </table>
+        </div>
+        <div align="center">
         <?php
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -83,6 +86,7 @@
         }*/
         $conn->close();
         ?>
+            </div>
         <h1>title</h1>
     </body>
 
